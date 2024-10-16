@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editkaro.in - Social Media Marketing & Video Editing Agency</title>
+   <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+    <style>
+                        .logo {
+                    width: 100px; /* Adjust logo width */
+                    height: 50px; /* Adjust logo height */
+                    margin: 20px; /* Adjust logo margin */
+                }
+
+                .logo img {
+                    width: 100%; /* Scale image to fit container */
+                    height: 100%; /* Scale image to fit container */
+                    object-fit: contain; /* Maintain image aspect ratio */
+                }
+
+                    body {
+                    font-family: Arial, sans-serif;
+                    margin: 10px;
+                    padding: 10px;
+                }
+
+                header {
+                    background-color: #333;
+                    color: #fff;
+                    padding: 1em;
+                    text-align: center;
+                }
+
+                nav ul {
+                    margin: 10px;
+                    padding: 10px;
+                    display: flex;
+                    justify-content:center;
+                }
+                nav li {
+                    margin-right: 20px;
+                }
+
+                nav a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+
+                ul {
+                    list-style: none;
+                    margin: 10px;
+                    padding: 5px;
+                    display: flex;
+                }
+
+                li {
+                    margin-right: 20px;
+                }
+
+                li:last-child {
+                    margin-right: 10px;
+                }
+
+                a {
+                    text-decoration:none;
+                    color: #fff;
+                }
+
+
+                #marquee {
+                    background-image: url('');
+                    background-size: cover;
+                    background-position: center;
+                    height: 50px;
+                    border-width:25px;;
+                    border-style:solid;
+                    border-width: 3px;
+                    border-color:black;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #ffffff;
+                }
+                #services {
+                    padding: 2em;
+                }
+
+                .service-grid {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 20px;
+                }
+                .service {
+                    background-color: #f7f7f7;
+                    padding: 20px;
+                    border: 1px solid #ddd;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                }
+
+                .service h3 {
+                    margin-top: 0;
+                }
+
+                #portfolio {
+                    padding: 2em;
+                    background-color: #f7f7f7;
+                }
+                .portfolio-grid {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 20px;
+                }
+
+                .portfolio-item {
+                    background-color: #fff;
+                    padding: 20px;
+                    border: 1px solid #ddd;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                }
+
+                .portfolio-item img {
+                    width: 100%;
+                    height: 150px;
+                    object-fit: cover;
+                }
+
+                #about {
+                    padding: 2em;
+                }
+
+                #contact {
+                    padding: 2em;
+                    background-color: #f7f7f7;
+                }
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                input, textarea {
+                    width: 100%;
+                    padding: 10px;
+                    margin-bottom: 20px;
+                    border: 1px solid #ccc;
+                }
+
+                button {
+                    background-color: #333;
+                    color: #fff;
+                    border: none;
+                    padding: 10px 20px;
+                    cursor: pointer;
+                }
+                footer {
+                    background-color: #333;
+                    color: #fff;
+                    padding: 1em;
+                    text-align: center;
+                    clear: both;
+                }
+
+                .button-group {
+                    display: inline-flex;
+                    margin-left: 45px;
+                    margin-right: 45px;
+                    
+                }
+
+                .button-group button {
+                    width: 45%;
+                    justify-content: space-between;
+                }
+                .search-bar {
+                position: relative;
+                width: 50%;
+                margin: 20px auto;
+                }
+
+            #search-input {
+                width: 80%;
+                padding: 10px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            #search-btn {
+                position: absolute;
+                top: 2px;
+                right: 65px;
+                background-color:green;
+                justify-content: right;
+                color: #fff;
+                padding:10px 10px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            #search-results {
+                display: none;
+                position: absolute;
+                top: 40px;
+                left: 0;
+                width: 100%;
+                background-color: #f9f9f9;
+                border: 1px solid #ccc;
+                padding: 10px;
+            }
+
+            #search-results ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            #search-results li {
+                padding: 10px;
+                border-bottom: 1px solid #ccc;
+            }
+
+            #search-results li:hover {
+                background-color: #f2f2f2;
+            }
+            #marquee{
+                padding-top: 580px;
+            }
+            .form-group{
+                border-style:solid;
+                border-width:3px;
+                border-color: black;
+
+            }
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <!--------<img src="webpic.jpg" style="border-radius: 50%; object-fit: cover; width: 70px; height: 70px;">--->
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="webpic.jpg" style="border-radius: 50%; object-fit: cover; width: 70px; height: 70px;">
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search...">
+                <button id="search-btn">Search</button>
+                <div id="search-results"></div>
+            </div>
+    
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    
+   
+    <section>
+        <form>
+            <center><h1>SUBSCRIPTION FORM</h1></center>
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="email" placeholder="example@email.com" maxlength="30" size="20">
+            </div>
+            <div class="form-group">
+                <label>Password:</label>
+                <input type="password" placeholder="**********" maxlength="15" size="15">
+            </div>
+            <div class="button-group">
+                <input type="submit" value="submit">
+                <input type="reset" value = "reset">
+            </div>
+        </form>
+    </section>
+    <section id="marquee">
+        <marquee><h1 style="background-color: red;text-align: center;padding-top;">Welcome to Editkaro.in </h1>
+        <p style="background-color: red;text-align: center;">Boost your online presence with our social media marketing & video editing services</p></marquee>
+        
+    </section>
+    
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service">
+                <h3>Social Media Marketing</h3>
+                <p>Grow your online presence with our expert social media marketing services</p>
+              <!-- eCommerce Ads -->
+                <div id="ecommerce-ads" class="video-category">
+                    <h2>eCommerce Ads</h2>
+                    <div class="video-grid">
+                        <video width="320" height="240" controls>
+                            <source src="C:\web internship projects\3rd Mockup Edit.mp4" type="video/mp4">
+                            <source src="movie.ogg" type="video/ogg">
+                          Your browser does not support the video tag.
+                          </video>
+                    </div>
+                </div>
+                  <!-- Ads -->
+            <div id="ads" class="video-category">
+                <h2>Ads</h2>
+                <div class="video-grid">
+                    <video width="320" height="240" controls>
+                        <source src="C:\web internship projects\Ronaldo 3.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                      Your browser does not support the video tag.
+                      </video>
+                </div>
+            </div>
+            </div>
+            <div class="service">
+                <h3>Video Editing</h3>
+                <p>Transform your videos with our professional video editing services</p>
+                <!-- Ads -->
+            <div id="ads" class="video-category">
+                <h2>Ads</h2>
+                <div class="video-grid">
+                    <video width="320" height="240" controls>
+                        <source src="C:\web internship projects\Coca Cola Landing Page AD.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                      Your browser does not support the video tag.
+                      </video>
+                </div>
+            </div>
+                    <!-- Anime Videos -->
+                <div id="anime-videos" class="video-category">
+                    <h2>Anime Videos</h2>
+                    <div class="video-grid">
+                        <video width="320" height="240" controls>
+                            <source src="C:\web internship projects\Comp 1_1_1.mp4" type="video/mp4">
+                            <source src="movie.ogg" type="video/ogg">
+                          Your browser does not support the video tag.
+                          </video>>
+                    </div>
+                </div>
+            </div>
+            <div class="service">
+                <h3>Content Creation</h3>
+                <p>Engage your audience with our high-quality content creation services</p>
+                <!-- Documentary Style -->
+                <div id="documentary-style" class="video-category">
+                    <h2>Documentary Style</h2>
+                    <div class="video-grid">
+                        <video width="320" height="240" controls>
+                            <source src="C:\web internship projects\Mohak Mangal Documentry Style.mp4" type="video/mp4">
+                            <source src="movie.ogg" type="video/ogg">
+                          Your browser does not support the video tag.
+                          </video>
+                    </div>
+                </div>
+                   <!-- Color Grading -->
+                <div id="color-grading" class="video-category">
+                    <h2>Color Grading</h2>
+                    <div class="video-grid">
+                        <video width="320" height="240" controls>
+                            <source src="C:\web internship projects\Color Grading.mp4"   type="video/mp4">
+                            <source src="movie.ogg" type="video/ogg">
+                          Your browser does not support the video tag.
+                          </video>
+                    </div>
+                </div>
+                <!-- Ads -->
+                <div id="ads" class="video-category">
+                    <h2>Ads</h2>
+                    <div class="video-grid">
+                        <video width="320" height="240" controls>
+                            <source src="C:\web internship projects\Gta V Game Maza Bank .mp4" type="video/mp4">
+                            <source src="movie.ogg" type="video/ogg">
+                          Your browser does not support the video tag.
+                          </video>
+                        <!-----<video poster="download.jpg" controls></video>------>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Portfolio Section -->
+<section id="portfolio">
+    <h2>Our Portfolio</h2>
+    <div class="portfolio-grid">
+        <div class="portfolio-item">
+            <img src="socmed.jpg" alt="Portfolio Item 1">
+            <h3>SOCIAL MEDIA PLATFORM</h3>
+            <p>Social Media Platform This full-stack social media platform enables users to share content, 
+                connect with friends, and join communities. Using React, Redux, Node.js, and PostgreSQL, 
+                it ensures real-time updates, secure authentication, and scalable performance. 
+                Features include messaging, hashtags, and content moderation.
+                </p>
+        </div>
+        <div class="portfolio-item">
+            <img src="ecom.jpg" alt="Portfolio Item 2">
+            <h3>E-COMMERCE WEBSITE</h3>
+            <p> E-commerce WebsiteOur full-stack e-commerce website allows users to browse products,
+                 manage cart and checkout securely. Built with React, Node.js, Express, and MySQL,
+                  it features product filtering, search functionality, and order tracking. 
+                  Admins can manage inventory, process payments, and analyze sales metrics.
+                </p>
+        </div>
+        <div class="portfolio-item">
+            <img src="portpic.jpg" alt="Portfolio Item 3">
+            <h3>PORTFOLIO WEBSITE</h3>
+               <p>Portfolio Website Our full-stack portfolio website showcases creative projects,
+                featuring responsive design, parallax scrolling, and interactive elements. 
+                Built with React, Node.js, and GraphQL, it ensures fast loading, secure authentication,
+                 and easy project management. Visitors can filter projects, view details, and contact creators.
+                
+                </p>
+        </div>
+    </div>
+        </section>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>
+               MISSION:<br>
+                
+                "Empowering creators to produce high-quality video content, Editkaro.
+                in aims to bridge the gap between creative vision and technical expertise.
+                 We strive to deliver exceptional video editing services,
+                  fostering a community of storytellers and innovators."<br>
+                
+                VISION:<br>
+                
+                "To become the leading video editing platform, revolutionizing the way creators bring their stories to life.
+                 We envision a future where Editkaro.in is synonymous with excellence, 
+                 creativity, and innovation in video production."<br>
+
+                 ABOUT Editkaro:<br>
+                 "Editkaro.in is a cutting-edge video editing platform offering bespoke services to creators, 
+                 businesses, and individuals. Our expert team crafts compelling stories,
+                  elevating your brand's visual identity."
+
+                </p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <form>
+                <input type="text" placeholder="Name" maxlength="15" size="20">
+                <input type="email" placeholder="Email" maxlength="15" size="20">
+                <input type="text" placeholder="phone number" maxlength="15" size="20">
+                <textarea placeholder="Message"></textarea>
+                <button>Send</button>
+            </form>
+        </section>
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2024 Editkaro.in. All rights reserved.</p>
+        </footer>
+
+        <script src="jscript.js"></script> 
+    </body>
+</html>
